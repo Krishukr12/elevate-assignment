@@ -34,7 +34,9 @@ export const Pagination = ({
             <button
               key={index}
               onClick={() => onChange(index + 1)}
-              className="shadow px-2 py-1 cursor-pointer"
+              className={` ${
+                currentPage === index + 1 ? "bg-amber-400" : ""
+              } shadow px-2 py-1 cursor-pointer`}
             >
               {index + 1}
             </button>
