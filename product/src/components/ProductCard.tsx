@@ -1,5 +1,3 @@
-// product image, title, price, and category.
-
 export const ProductCard = ({
   image,
   title,

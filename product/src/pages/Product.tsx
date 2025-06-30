@@ -11,6 +11,7 @@ export const Product = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const debouncedSearchTerm = useDebounce(searchTerm, 500);
   const [currentPage, setCurrentPage] = useState<number>(1);
+  const [itemsPerPage, setItemsPerPage] = useState(10);
 
   const getProducts = async () => {
     try {
@@ -34,7 +35,6 @@ export const Product = () => {
     setSearchTerm(value);
   };
 
-  const itemsPerPage = 10;
   const possiblePages = Math.ceil(productData.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
@@ -51,6 +51,11 @@ export const Product = () => {
 
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
+  };
+
+  const handlePerPageChange = (value: number) => {
+    setCurrentPage(1);
+    setItemsPerPage(value);
   };
 
   return (
@@ -73,11 +78,9 @@ export const Product = () => {
       </section>
       <section className="p-2.5 flex justify-center items-center">
         <Pagination
+          itemsPerPageChange={handlePerPageChange}
           currentPage={currentPage}
           onChange={handlePageChange}
-          endIndex={endIndex}
-          itemsPerPage={itemsPerPage}
-          startIndex={startIndex}
           possiblePages={possiblePages}
         />
       </section>
