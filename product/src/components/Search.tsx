@@ -4,7 +4,7 @@ export const Search = ({ onChange }: { onChange: (value: string) => void }) => {
       <input
         onChange={(e) => onChange(e.target.value)}
         placeholder="Search Product"
-        className="border p-2 outline-none"
+        className="border p-2 outline-none "
       />
     </div>
   );

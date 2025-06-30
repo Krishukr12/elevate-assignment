@@ -1,6 +1,7 @@
+import type { IProduct } from "../types/product.type";
+
 import { useEffect, useState } from "react";
 import { axiosInstance } from "../config/axios";
-import type { IProduct } from "../types/product.type";
 import { ProductCard } from "../components/ProductCard";
 import { Pagination } from "../components/Pagination";
 import { Search } from "../components/Search";
@@ -35,20 +36,6 @@ export const Product = () => {
     setSearchTerm(value);
   };
 
-  const possiblePages = Math.ceil(productData.length / itemsPerPage);
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-
-  const filteredProduct = debouncedSearchTerm
-    ? productData
-        .filter((product) =>
-          product.title
-            .toLowerCase()
-            .includes(debouncedSearchTerm.toLowerCase())
-        )
-        .slice(startIndex, endIndex)
-    : productData.slice(startIndex, endIndex);
-
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
   };
@@ -58,13 +45,26 @@ export const Product = () => {
     setItemsPerPage(value);
   };
 
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
+  const filteredProduct = debouncedSearchTerm
+    ? productData.filter((product) =>
+        product.title.toLowerCase().includes(debouncedSearchTerm.toLowerCase())
+      )
+    : productData;
+
+  const slicedData = filteredProduct.slice(startIndex, endIndex);
+
+  const possiblePages = Math.ceil(filteredProduct.length / itemsPerPage);
+
   return (
     <section className="">
-      <section className="p-4 flex items-center ">
+      <section className="p-4 flex items-center">
         <Search onChange={handleSearchChange} />
       </section>
       <section className="grid grid-cols-1 md:grid-cols-4 gap-2">
-        {filteredProduct.map((product: IProduct) => {
+        {slicedData.map((product: IProduct) => {
           return (
             <ProductCard
               key={product.id}
