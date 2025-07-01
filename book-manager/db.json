@@ -1,0 +1,170 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt",
+      "genre": "Tech",
+      "price": 39.99
+    },
+    {
+      "id": "2",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Fiction",
+      "price": 14.99
+    },
+    {
+      "id": "3",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "genre": "Tech",
+      "price": 29.99
+    },
+    {
+      "id": "4",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Fiction",
+      "price": 12.99
+    },
+    {
+      "id": "5",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "genre": "Self-Help",
+      "price": 19.99
+    },
+    {
+      "id": "6",
+      "title": "The Lean Startup",
+      "author": "Eric Ries",
+      "genre": "Tech",
+      "price": 24.99
+    },
+    {
+      "id": "7",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Fiction",
+      "price": 10.99
+    },
+    {
+      "id": "8",
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "genre": "Self-Help",
+      "price": 16.99
+    },
+    {
+      "id": "9",
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "genre": "Non-Fiction",
+      "price": 22.99
+    },
+    {
+      "id": "10",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": "Fiction",
+      "price": 13.99
+    },
+    {
+      "id": "11",
+      "title": "Zero to One",
+      "author": "Peter Thiel",
+      "genre": "Tech",
+      "price": 18.99
+    },
+    {
+      "id": "12",
+      "title": "Educated",
+      "author": "Tara Westover",
+      "genre": "Memoir",
+      "price": 15.99
+    },
+    {
+      "id": "13",
+      "title": "The Subtle Art of Not Giving a F*ck",
+      "author": "Mark Manson",
+      "genre": "Self-Help",
+      "price": 17.99
+    },
+    {
+      "id": "14",
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "genre": "Non-Fiction",
+      "price": 21.99
+    },
+    {
+      "id": "15",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "genre": "Fiction",
+      "price": 11.99
+    },
+    {
+      "id": "16",
+      "title": "The Art of Computer Programming",
+      "author": "Donald Knuth",
+      "genre": "Tech",
+      "price": 199.99
+    },
+    {
+      "id": "17",
+      "title": "Man's Search for Meaning",
+      "author": "Viktor E. Frankl",
+      "genre": "Memoir",
+      "price": 12.99
+    },
+    {
+      "id": "18",
+      "title": "The Power of Habit",
+      "author": "Charles Duhigg",
+      "genre": "Self-Help",
+      "price": 16.99
+    },
+    {
+      "id": "04ca",
+      "title": "dild",
+      "author": "dil foodsd",
+      "genre": "ssdfa",
+      "price": 88,
+      "description": "asdf"
+    },
+    {
+      "id": "fa9c",
+      "title": "asdfdfa",
+      "author": "sdfsdf",
+      "genre": "asdf",
+      "price": 55,
+      "description": "asdfasd"
+    },
+    {
+      "id": "214f",
+      "title": "asdfadfa",
+      "author": "sdfsd",
+      "genre": "fasdf",
+      "price": 55,
+      "description": "asdfasdf"
+    },
+    {
+      "id": "ec43",
+      "title": "sdfasdf",
+      "author": "dsfasdf",
+      "genre": "dfasd",
+      "price": 6,
+      "description": "dsfsdf"
+    },
+    {
+      "id": "206a",
+      "title": "dsfasdsdf",
+      "author": "asdfds",
+      "genre": "fasdf",
+      "price": 5,
+      "description": "sdfasdf"
+    }
+  ]
+}
